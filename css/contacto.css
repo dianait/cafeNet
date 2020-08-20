@@ -1,0 +1,116 @@
+     .escritorio {
+         display: none;
+     }
+     
+     form#form_01 {
+         margin-top: 1.7em;
+     }
+     
+     form#form_01 input:not(.no),
+     form#form_01 textarea,
+     form#form_01 button {
+         width: 100%;
+         margin-bottom: 0.5em;
+         height: 30px;
+         font-family: 'Lora', serif;
+         font-size: 15px;
+     }
+     
+     form#form_01 input[type="submit"] {
+         width: 100%;
+         background-color: #c2b59b;
+         margin-top: 1em;
+     }
+     
+     form#form_01 textarea {
+         height: 15em;
+         color: grey;
+     }
+     
+     input#nombre_consulta {
+         margin-top: 0.8em;
+     }
+     
+     section#rrss_contacto {
+         margin-top: 0.1em;
+         width: 100%;
+         background-color: #bb702c;
+         margin: 0 auto;
+     }
+     
+     section#rrss_contacto ul li a {
+         padding: 0.3em;
+     }
+     
+     section#rrss_contacto ul {
+         width: 200px;
+         height: 50px;
+         margin: 0 auto;
+     }
+     
+     section#rrss_contacto ul li img {
+         width: 2em;
+     }
+     
+     section#rrss_contacto ul li a:hover {
+         background-color: #703c0d;
+     }
+     
+     aside#aviso-legal {
+         margin-top: 0.6em;
+         font-family: 'Lora', serif;
+         font-size: 1.1em;
+     }
+     
+     aside#aviso-legal a {
+         color: black;
+         padding: 0.6em;
+     }
+     
+     aside#aviso-legal a:hover {
+         background-color: #c2b59b;
+         color: white;
+     }
+     /***************VERSIÓN ESCRITORIO**************/
+     
+     @media (min-width: 678px) {
+         .smartphone {
+             display: none;
+         }
+         .escritorio {
+             display: block;
+         }
+         article#Contacto {
+             display: inline-flex;
+             width: 100%;
+         }
+         div#mapa {
+             margin: 5em 1em 1em 1em;
+             width: 100%;
+         }
+         div#mapa iframe {
+             width: 600px;
+             height: 300px;
+         }
+         div#form_container {
+             margin: 1em;
+             width: 100%;
+         }
+         div#mapa p {
+             margin-top: 2em;
+             font-family: 'Lora', serif;
+         }
+         div#mapa img {
+             border: 4px solid #c2b59b;
+         }
+         section#rrss_contacto ul {
+             width: 250px;
+             margin: 0 auto;
+         }
+         aside#aviso-legal a {
+             color: black;
+         }
+         aside#aviso-legal a:hover {
+             color: #703c0d;
+         }
+     }

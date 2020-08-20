@@ -1,0 +1,138 @@
+             @import url('https://fonts.googleapis.com/css?family=Cinzel|Lora|Slabo+27px');
+             * {
+                 list-style: none;
+                 margin: 0;
+                 padding: 0;
+                 box-sizing: border-box;
+             }
+             
+             .esritorio {
+                 display: none;
+             }
+             
+             div.item input[type="button"],
+             form#form_01 button,
+             form#form_01 input[type="submit"] {
+                 background-color: #c2b59b;
+                 width: 140px;
+                 height: 40px;
+                 font-family: 'Lora', serif;
+                 font-size: 15px;
+             }
+             
+             p.al_centro,
+             h3.al_centro {
+                 text-align: center;
+             }
+             
+             p.derecha {
+                 text-align: right;
+             }
+             /* Cuadro de búsqueda */
+             
+             input#texto_buscar,
+             section#buscador input {
+                 width: 100%;
+                 height: 35px;
+                 font-family: 'Lora', serif;
+                 font-size: 15px;
+                 border: 0.1em solid #703c0d;
+                 margin: 0.3em;
+             }
+             
+             article#Ideas_para_regalar button {
+                 border: 0.1em solid #703c0d;
+                 background-color: #703c0d;
+                 padding: 0.3em;
+             }
+             
+             article#Ideas_para_regalar button img {
+                 width: 2.4em;
+             }
+             
+             aside#search {
+                 border: 0.1em solid #703c0d;
+                 margin-top: 1em;
+                 width: 100%;
+                 display: inline-flex;
+                 background-color: #703c0d;
+             }
+             /***************VERSIÓN ESCRITORIO**************/
+             
+             @media (min-width: 678px) {
+                 .smartphone {
+                     display: none;
+                 }
+                 article#Ideas_para_regalar {
+                     margin-top: 11em;
+                 }
+                 section#articulos {
+                     column-count: 4;
+                     width: 85%;
+                     margin: 0 auto;
+                 }
+                 section#articulos div.item {
+                     background-color: #c2b59b;
+                     margin-left: 0.5em;
+                     margin-bottom: 0.5em;
+                 }
+                 section#articulos div.item h3 {
+                     margin-top: 2em;
+                 }
+                 div.contenedor_foto_tienda {
+                     height: 14em;
+                 }
+                 div.contenedor_foto_tienda img {
+                     width: 100%;
+                 }
+                 input#texto_buscar,
+                 section#buscador input {
+                     width: 40%;
+                     margin: 0 auto;
+                     padding-left: 1em;
+                 }
+                 aside#search {
+                     width: 100%;
+                     display: inline-flex;
+                     background-color: white;
+                     border: none;
+                     margin: 0 auto;
+                     float: right;
+                     margin-bottom: 1em;
+                 }
+                 .banner {
+                     width: 70%;
+                     height: 9.3em;
+                     background-size: 100%, 100%;
+                     animation-direction: alternate;
+                     background-image: url();
+                     animation: banner 10s infinite;
+                     margin: 0 auto;
+                     background-repeat: no-repeat;
+                 }
+                 @keyframes banner {
+                     0%,
+                     30% {
+                         background-image: url(../img/slider_header/tazas.jpg);
+                         opacity: 1;
+                     }
+                     31%,
+                     34% {
+                         opacity: 1;
+                     }
+                     35%,
+                     65% {
+                         background-image: url(../img/slider_header/cafe.jpg);
+                         opacity: 1;
+                     }
+                     66%,
+                     69% {
+                         opacity: 1;
+                     }
+                     70%,
+                     100% {
+                         background-image: url(../img/slider_header/cestas2.jpg);
+                         opacity: 1;
+                     }
+                 }
+             }

@@ -1,0 +1,78 @@
+  @import url('https://fonts.googleapis.com/css?family=Cinzel|Lora|Slabo+27px');
+  * {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  article#tipos_Cafe {
+      text-align: justify;
+      font-family: 'Lora', serif;
+      padding: 1em 0.8em 1em 0.8em;
+  }
+  
+  .fotos_en_texto {
+      margin: 1em 0em 1em 0em;
+      border: 2px solid #703c0d;
+      width: 100%;
+  }
+  
+  section.texto_cafe a {
+      color: black;
+      padding: 0.8em;
+  }
+  
+  section.texto_cafe a:hover {
+      color: #703c0d;
+      background-color: #c2b59b;
+  }
+  
+  @media (min-width: 678px) {
+      .smartphone {
+          display: none;
+      }
+      main#principal {
+          display: inline-flex;
+      }
+      article#tipos_Cafe {
+          width: 100%;
+          padding: 1em 2em 1em 2em;
+      }
+      section#imagenes_tipos_cafes {
+          display: inline-flex;
+          width: 100%;
+      }
+      section#imagenes_tipos_cafes img {
+          width: 100%;
+          opacity: 0.6;
+      }
+      section#imagenes_tipos_cafes img:hover {
+          opacity: 1;
+      }
+      .seccion_cafe {
+          display: inline-flex;
+      }
+      .texto_cafe {
+          padding: 2em;
+          width: 100%;
+      }
+      .foto_txt_cafe {
+          padding: 0.3em;
+          width: 50%;
+          margin-top: 5.5em;
+      }
+      .foto_txt_cafe img {
+          border: 3px solid #c2b59b;
+          width: 100%;
+          margin: 0 auto;
+      }
+      ul#menu_cafes_escritorio li a {
+          display: block;
+          width: 100%;
+          height: 2em;
+      }
+      ul#menu_cafes_escritorio li a:hover {
+          background-color: #703c0d;
+      }
+  }

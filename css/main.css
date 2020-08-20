@@ -1,0 +1,336 @@
+               @import url('https://fonts.googleapis.com/css?family=Cinzel|Lora|Slabo+27px');
+               * {
+                   list-style: none;
+                   margin: 0;
+                   padding: 0;
+                   box-sizing: border-box;
+               }
+               
+               a {
+                   text-decoration: none;
+                   color: white;
+               }
+               
+               body {
+                   font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+                   margin: 0;
+                   padding: 0;
+                   width: 95%;
+                   margin: 0 auto;
+                   box-sizing: border-box;
+               }
+               
+               .container {
+                   max-width: 100%;
+                   background: #FFF;
+                   margin: 0 auto;
+               }
+               
+               header {
+                   background: #bb702c;
+                   height: 90px;
+               }
+               
+               .fltrt {
+                   float: right;
+               }
+               
+               .fltlft {
+                   float: left;
+               }
+               /* MENU NAVEGACIÓN PARA MOVIL */
+               
+               .escritorio {
+                   display: none;
+               }
+               
+               nav#container_menu {
+                   width: 100%;
+               }
+               
+               ul#menu {
+                   list-style: none;
+                   width: 100%;
+                   margin: 0;
+                   padding: 0;
+               }
+               
+               ul#menu ul {
+                   display: none;
+                   list-style: none;
+                   text-decoration: none;
+               }
+               
+               ul#menu li {
+                   color: white;
+                   display: block;
+               }
+               
+               ul#menu li ul {
+                   margin: 0;
+               }
+               
+               ul#menu li a,
+               ul#menu li ul a {
+                   color: white;
+                   text-decoration: none;
+                   display: block;
+               }
+               
+               ul#menu li ul a {
+                   padding: 0.5em;
+                   color: black;
+               }
+               
+               ul#menu li ul a:hover {
+                   background-color: #ffd8ad;
+               }
+               
+               ul#menu li:hover>ul {
+                   display: block;
+                   background-color: white;
+                   margin: 0;
+               }
+               
+               p#logo_movil {
+                   text-align: center;
+               }
+               
+               p#logo_movil img {
+                   padding-top: 0.5em;
+                   width: 150px;
+               }
+               /* ENLACES REDES SOCIALES (HEADER Y FOOTER) */
+               
+               ul.redes {
+                   list-style-type: none;
+                   margin: 0;
+                   padding: 0;
+                   padding-top: 0.3em;
+               }
+               
+               ul.redes li {
+                   float: left;
+               }
+               
+               .titulo {
+                   text-align: center;
+                   font-family: 'Cinzel', serif;
+               }
+               
+               ul.redes li a {
+                   display: block;
+                   text-decoration: none;
+               }
+               
+               ul.redes li a img {
+                   width: 31px;
+               }
+               /* PARTE INFERIOR HEADER CON ENLACE A REGISTRO */
+               
+               section#header_inferior {
+                   background-color: #703c0d;
+                   height: 40px;
+                   position: relative;
+                   top: 0;
+               }
+               /* FOOTER */
+               
+               footer {
+                   margin-bottom: 0;
+                   background: #bb702c;
+                   height: 80px;
+                   padding-top: 1.4em;
+               }
+               
+               p#copyright {
+                   color: white;
+                   font-size: 14px;
+                   text-align: right;
+                   padding-right: 1em;
+                   padding-top: 0.7em;
+               }
+               /***************** VERSIÓN ESCRITORIO ***************/
+               
+               @media (min-width: 678px) {
+                   /*EFECTOS PARA FOTOS, CENTRADOS... */
+                   .bordes_redondos {
+                       border-radius: 13px 13px 13px 13px;
+                       -moz-border-radius: 13px 13px 13px 13px;
+                       -webkit-border-radius: 13px 13px 13px 13px;
+                   }
+                   .sombra {
+                       -webkit-box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.75);
+                       -moz-box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.75);
+                       box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.75);
+                   }
+                   .centrar_foto {
+                       text-align: center;
+                   }
+                   button.boton {
+                       width: 100%;
+                       background-color: #703c0d;
+                       color: white;
+                       height: 3em;
+                       font-family: 'Lora', serif;
+                       font-size: 1.2em;
+                   }
+                   button.boton:hover {
+                       background-color: #c2b59b;
+                       color: #703c0d;
+                       font-weight: bold;
+                   }
+                   aside.sidebar {
+                       padding: 1em;
+                       width: 100%;
+                       width: 19%;
+                       margin: 0 auto;
+                   }
+                   aside#sidebar_1 img#foto_sidebar1 {
+                       margin-top: 0.3em;
+                       border: 3px solid #c2b59b;
+                   }
+                   aside.sidebar img {
+                       width: 100%;
+                   }
+                   section.producto_destacado {
+                       padding-top: 2em;
+                       width: 100%;
+                       margin: 0 auto;
+                   }
+                   header {
+                       background: #bb702c;
+                       height: 80px;
+                       padding: 20px 0px 20px 0px;
+                   }
+                   section#header_inferior {
+                       height: 47px;
+                   }
+                   /* IMAGEN_CABECERA */
+                   div.banner_inicio img {
+                       margin-top: 0.7em;
+                       width: 100%;
+                   }
+                   /* MENU NAVEGACIÓN */
+                   .escritorio {
+                       display: inline;
+                   }
+                   ul#menu_escritorio {
+                       list-style-type: none;
+                       margin: 0;
+                       padding: 0;
+                       overflow: hidden;
+                       padding-top: 2em;
+                   }
+                   ul#menu_escritorio li {
+                       float: left;
+                       font-size: 14px;
+                   }
+                   ul#menu_escritorio li a {
+                       font-family: 'Cinzel', serif;
+                       display: block;
+                       color: white;
+                       text-align: center;
+                       padding: 5px;
+                       text-decoration: none;
+                       width: 90px;
+                   }
+                   ul#menu_escritorio li a:hover {
+                       background-color: #703c0d;
+                       width: 90px;
+                       border-radius: 5px 5px 0px 0px;
+                       -moz-border-radius: 5px 5px 0px 0px;
+                       -webkit-border-radius: 5px 5px 0px 0px;
+                       border: 0px solid #000000;
+                   }
+                   section#menu_desktop {
+                       display: inline-flex;
+                   }
+                   /* ENLACES REDES SOCIALES (HEADER Y FOOTER)  */
+                   section#container_rrss {
+                       padding-right: 2em;
+                   }
+                   /* PARTE INFERIOR HEADER CON ENLACE A REGISTRO */
+                   section#log p {
+                       color: #bb702c;
+                       font-size: 14px;
+                       font-family: 'Lora', serif;
+                       font-weight: bold;
+                       letter-spacing: 1px;
+                       text-align: right;
+                       padding-right: 1em;
+                       padding-top: 0.9em;
+                   }
+                   section#log p a {
+                       text-decoration: none;
+                       color: #bb702c;
+                   }
+                   section#log p a:hover {
+                       color: white;
+                   }
+                   /* FOOTER */
+                   footer {
+                       background: #bb702c;
+                       color: white;
+                       height: 160px;
+                       width: 100%;
+                       display: inline-flex;
+                       padding-top: 0.5em;
+                   }
+                   section#container_rrss_footer {
+                       width: 100%;
+                       margin: 0 auto;
+                       font-family: 'Cinzel', serif;
+                       padding: 0em 5em 1em 5em;
+                   }
+                   section#cont_rrss_footer ul#rrss_footer {
+                       width: 200px;
+                       margin: 0 auto;
+                       height: 60px;
+                   }
+                   ul#rrss_footer li a {
+                       padding: 6px;
+                   }
+                   ul#rrss_footer li a img {
+                       width: 35px;
+                   }
+                   ul.destacados {
+                       font-family: 'Lora', serif;
+                       padding-left: 2em;
+                   }
+                   ul.desatacados span {
+                       color: white;
+                   }
+                   ul.destacados li {
+                       float: left;
+                   }
+                   ul.destacados li a {
+                       display: block;
+                   }
+                   ul.destacados li a:hover {
+                       color: #703c0d;
+                   }
+                   .borde {
+                       width: 100%;
+                   }
+                   section.informacion_contacto p {
+                       text-align: center;
+                       font-size: 0.9em;
+                   }
+                   section.informacion_contacto p span {
+                       font-size: 0.9em;
+                   }
+                   p.al_centro span a:hover {
+                       color: #703c0d;
+                   }
+                   section.informacion_contacto {
+                       text-align: center;
+                   }
+                   #container_rrss_footer p.derecha {
+                       padding-right: 3em;
+                   }
+                   img#logo_footer {
+                       width: 85%;
+                       padding-top: 1em;
+                   }
+               }

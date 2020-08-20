@@ -1,0 +1,65 @@
+                        @import url('https://fonts.googleapis.com/css?family=Cinzel|Lora|Slabo+27px');
+                        * {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        /*********VERSIÓN SMARTPHONE **************/
+                        
+                        article#memoriaJMarcilla p,
+                        article#tipos_Cafe p {
+                            text-align: justify;
+                            font-family: 'Lora', serif;
+                            padding: 1em 0.8em;
+                        }
+                        
+                        article#memoriaJMarcilla img,
+                        .fotos_en_texto,
+                        img.imagenes_post {
+                            width: 100%;
+                            border: 2px solid #703c0d;
+                        }
+                        
+                        article#memoriaJMarcilla h1,
+                        .titulo {
+                            font-family: 'Cinzel', serif;
+                            text-align: center;
+                            margin-top: 1.5em;
+                        }
+                        /***************VERSIÓN ESCRITORIO**************/
+                        
+                        @media (min-width: 678px) {
+                            .smartphone {
+                                display: none;
+                            }
+                            article#memoriaJMarcilla img,
+                            .fotos_en_texto,
+                            img.imagenes_post {
+                                width: 90%;
+                                margin-left: 1.3em;
+                            }
+                            main#principal {
+                                display: inline-flex;
+                                padding: 1em;
+                            }
+                            article#memoriaJMarcilla {
+                                margin-top: 1em;
+                                column-count: 2;
+                                -moz-column-count: 2;
+                                column-gap: 0em;
+                                -moz-column-gap: 0em;
+                                width: 60%;
+                            }
+                            /* ul#lista_ventajas,
+                            .ventajas {
+                                padding: 1em;
+                            }
+                            ul#lista_ventajas li,
+                            .ventajas li {
+                                padding: 0.5em;
+                                text-align: center;
+                                font-family: 'Lora', serif;
+                                color: white;
+                            } */
+                        }
