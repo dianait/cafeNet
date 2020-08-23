@@ -11,7 +11,7 @@
     🔨 HTML5 & CSS3
 
 
-🌟 So many things I've learned in the past years. But I'm a little proud of this project. Now, I would acomplish this project in a totally different way, but this responsive layout without CSS grid or jsvascript was a challenging way to improve my skills. 
+🌟 So many things I've learned in the past years. But I'm a little proud of this project. Now, I would acomplish this project in a totally different way, but this responsive layout without CSS grid or javascript was a challenging way to improve my skills. 
 
 You can look it out here :point_down:
 
